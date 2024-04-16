@@ -2,16 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from "react-router-dom";
 import App from './App';
-import { Userprovider } from "./contexts/user.context";
+import { UserProvider } from "./contexts/user.context";
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
       <BrowserRouter>
-          <Userprovider>
+          <UserProvider>
               <App />
-          </Userprovider>
+          </UserProvider>
       </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
